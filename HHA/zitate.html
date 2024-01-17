@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("bildern/img18.jfif");
+
+  /* Full height */
+  height: 60%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:30px;
+}
+
+.mrg{
+  margin:30px;
+  background-color:#D3D3D3; 
+}
+
+
+
+
+
+
+.row {
+  margin: auto;
+  width: 100%;
+  max-width: 60em;/*960px*/
+  &:first-child {padding-top: 3em;}
+  &:last-child {padding-bottom: 3em;}
+  
+}
+.col-3,
+.col-2 {
+  display: inline-block;
+  vertical-align: top;
+  
+}
+.col-3 {width: 280px;}
+.col-2 {width: 49%;}
+@media screen and (max-width: 768px) {
+  .col-3,
+  .col-2 {width: 49%;}
+}
+
+
+.row-red .row {
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+.sec-about p {font-size: .90em;}
+.row-grey {
+  background: #111;
+  color: #ddd;
+}
+.sec-about .row-grey .row {padding: 3em 0;}
+.sec-about article {padding: 0 1em;}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom{
+ height:50vh;
+}
+h1{
+color : red;
+}
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: right;
+
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+p{
+	margin-left: 30px;
+	letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+
+		<div class="bg"><marquee><h1>Heinrich Heine Akademie</h1></marquee></div>
+		<div class="mrg">
+		<p>Heinrich Heine, geboren am 13. Dezember 1797 als Harry Heine in Düsseldorf, Herzogtum Berg; gestorben am 17. Februar 1856 in Paris, 
+		   war einer der wichtigsten deutschen <a href="https://wortwuchs.net/dichter/">Dichter,</a>" Journalisten und Schriftsteller.</p>
+		<hr>
+		<center><img src="bildern/img7.jfif" /></center><hr>
+		
+		 <p >Der Dichter prägte die deutsche Sprache nachhaltig, machte die Sprache des Alltags lyrikfähig und entwickelte erstmals aus Reiseberichten, 
+		     Zeitungsartikeln und Feuilletons künstlerische Kleinode. Heines Werk lässt sich aufgrund seiner Vielfalt nicht eindeutig einer <a href="https://wortwuchs.net/literaturepochen/">literarischen 
+			 Epoche</a>  zuordnen.<br><br>
+             Zwar geht Heine aus der <a href="https://wortwuchs.net/literaturepochen/romantik/">Romantik</a>  hervor, gilt aber gleichzeitig als Überwinder 
+			 ebendieser Strömung. Weiterhin finden sich in seinem 
+			 Werk die revolutionären Ideen des <a href="https://wortwuchs.net/literaturepochen/vormaerz/">Vormärz</a>, aber auch Elemente der Aufklärung 
+			 sowie des <a href="https://wortwuchs.net/literaturepochen/realismus/"> Realismus</a>. Heines Werk ist vielschichtig – so finden 
+			 sich lyrische Texte aller Art und <a href="https://wortwuchs.net/prosa/">Prosa</a>, aber auch <a href="https://wortwuchs.net/polemik/">polemische</a>
+			 Streitschriften sowie journalistische
+			 Kritiken darunter.</p>
+		</div>
+		<hr>
+		
+		<hr>
+		<div class="row">
+		
+			  <div class="column">
+				<img src="bildern/img3.jfif" alt="Snow" style="width:100%" class="zoom">
+			  </div>
+			  
+			  <div class="column">
+				<img src="bildern/img4.jfif" alt="Forest" style="width:100%" class="zoom">
+			  </div>
+			  
+			  <div class="column">
+				<img src="bildern/img5.jfif" alt="Mountains" style="width:100%" class="zoom">
+			  </div><hr>
+			  
+			  <div class="column">
+				<img src="bildern/img6.jfif" alt="Snow" style="width:100%" class="zoom">
+			  </div>
+			  
+			  <div class="column">
+				<img src="bildern/img8.jfif" alt="Forest" style="width:100%" class="zoom">
+			  </div>
+			  
+			  <div class="column">
+				<img src="bildern/img9.jfif" alt="Mountains" style="width:100%" class="zoom">
+			  </div><hr>
+			  
+			  <div class="column">
+				<img src="bildern/img10.jfif" alt="Snow" style="width:100%" class="zoom">
+			  </div>
+			  
+			  <div class="column">
+				<img src="bildern/img12.jfif" alt="Forest" style="width:100%" class="zoom">
+			  </div>
+			  
+			  <div class="column">
+				<img src="bildern/img16.jfif" alt="Mountains" style="width:100%" class="zoom">
+			  </div>
+			  
+			 
+        </div><hr><button class="button button1"><a href="index.html">Zurück</a></button>
+		
+		
+		
+		
+
+</body>
+</html>

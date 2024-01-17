@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Heinrich Heine Akademie</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+body{
+background-color:#f1f1f1;
+}
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: blue; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: left;
+
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: right;
+
+}
+
+.button2:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+p{
+  margin-left: 30px;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center"><b>News vom 10.10.2020</b></h2>
+   <p>Herzlichen Glückwunsch „Fahd Makhoukhi“ für deine Ausbildungsstelle. Wir durften heute deinen Arbeitgeber kennenlernen und uns davon überzeugen, 
+      dass du in guten Händen sein wirst. Wir wünschen dir eine tolle Zeit und viel Erfolg in Deutschland.</p>
+
+<div class="w3-content w3-section" style="max-width:600px" >
+  <img class="mySlides" src="bildern/img11.jfif" style="width:100%">
+  <img class="mySlides" src="bildern/img17.jfif" style="width:100%">
+  <br>
+  
+  
+</div>
+
+<button class="button button1"><a href="test1.html">Next</a></button>
+<button class="button button2"><a href="index.html">Zurück</a></button>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

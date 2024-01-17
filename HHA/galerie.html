@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("bildern/img18.jfif");
+
+  /* Full height */
+  height: 60%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:30px;
+}
+
+.mrg{
+  margin:30px;
+  background-color:#D3D3D3; 
+}
+
+
+
+
+
+
+.row {
+  margin: auto;
+  width: 100%;
+  max-width: 60em;/*960px*/
+  &:first-child {padding-top: 3em;}
+  &:last-child {padding-bottom: 3em;}
+  
+}
+.col-3,
+.col-2 {
+  display: inline-block;
+  vertical-align: top;
+  
+}
+.col-3 {width: 280px;}
+.col-2 {width: 49%;}
+@media screen and (max-width: 768px) {
+  .col-3,
+  .col-2 {width: 49%;}
+}
+
+
+.row-red .row {
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+.sec-about p {font-size: .90em;}
+.row-grey {
+  background: #111;
+  color: #ddd;
+}
+.sec-about .row-grey .row {padding: 3em 0;}
+.sec-about article {padding: 0 1em;}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom{
+ height:50vh;
+}
+h1{
+color : red;
+}
+
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: right;
+
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h4,h1{
+	margin-left: 30px;
+	letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+
+		<div class="bg"><marquee><h1>Heinrich Heine Akademie</h1></marquee></div>
+		<div class="mrg">
+		
+		<hr>
+		
+		
+		 <h1><center>GALERIE</center></h1>
+		 <h4>Hier ein paar tolle Aufnahmen von unserer Schule in Marrakech.</h4>
+		</div>
+		<hr><hr>
+		
+		
+		
+		
+		<!-- image slide -->
+		
+		<div class="w3-content w3-section" style="max-width:600px" >
+			  <img class="mySlides" src="bildern/img15.jfif" style="width:100%">
+			  <img class="mySlides" src="bildern/img25.jfif" style="width:100%">
+			  <img class="mySlides" src="bildern/img26.jfif" style="width:100%">
+			  <img class="mySlides" src="bildern/img14.jfif" style="width:100%"><br>
+			  
+  
+        </div>
+		
+
+		
+		<hr>
+		<hr><button class="button button1"><a href="index.html">Zurück</a></button>
+		
+		<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+		
+		
+
+</body>
+</html>

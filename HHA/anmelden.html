@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Heinrich Heine Akademie( Startseite )</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+body{
+background-color:#f1f1f1;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: right;
+
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+p,h1{
+  
+  
+  letter-spacing: 2px;
+
+}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Heinrich Heine Akademie:</h2>
+
+<div class="w3-content w3-section" style="max-width:600px" >
+  <img class="mySlides" src="bildern/img30.jfif" style="width:100%">
+  <img class="mySlides" src="bildern/img31.jfif" style="width:100%">
+  <img class="mySlides" src="bildern/img32.jfif" style="width:100%">
+  <br>
+  
+  <!-- formulaire --> 
+  
+  
+  <form action="/action_page.php">
+  <div class="container">
+    <h1>Anmelden </h1>
+    <p>Vereinbaren Sie einen Termin mit uns. Wir beraten Sie gerne persönlich!</p>
+    <hr>
+
+	<label for="email"><b>Anrede</b></label>
+				
+			<label class="container">Frau
+			  <input type="radio" checked="checked" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Herr
+			  <input type="radio" name="radio">
+			  <span class="checkmark"></span>
+			</label><hr>
+	
+
+    <label for="email"><b>Vorname</b></label>
+    <input type="text" placeholder="Enter Vorname" name="email" id="email" required>
+
+    <label for="psw"><b>Nachname</b></label>
+    <input type="password" placeholder="Enter Nachname" name="psw" id="psw" required>
+	
+	<label for="psw"><b>E-mail</b></label>
+    <input type="password" placeholder="Enter E-mail" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Telefon</b></label>
+    <input type="password" placeholder="Telefon" name="psw-repeat" id="psw-repeat" required>
+	
+	<label for="email"><b>Ihr Wunschtermin</b></label>
+    <input type="text" placeholder="01.01.2020" name="email" id="email" required>
+    <hr>
+	
+	<label for="email"><b>Uhr zeit</b></label>
+    <input type="time" placeholder="01.01.2020" name="email" id="email" required>
+    
+
+    <button type="submit" class="registerbtn">Absenden</button>
+  </div><button class="button button1"><a href="index.html">Zurück</a></button>
+  
+  <div class="container signin">
+    <p>Copyright &#169; 2020</p>
+  </div>
+</form>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

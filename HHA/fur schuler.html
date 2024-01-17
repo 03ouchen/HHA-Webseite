@@ -1,0 +1,417 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Heinrich Heine Akademie </title>
+<style>
+
+
+/*Typography*/
+body {font: 300 16px 'Roboto', 'Lato', sans-serif;}
+/*Layout*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+*,
+*:before,
+*:after {box-sizing: border-box;}
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  margin: auto;
+  width: 100%;
+  max-width: 60em;/*960px*/
+  &:first-child {padding-top: 3em;}
+  &:last-child {padding-bottom: 3em;}
+}
+.col-3,
+.col-2 {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-3 {width: 280px;}
+.col-2 {width: 49%;}
+@media screen and (max-width: 768px) {
+  .col-3,
+  .col-2 {width: 49%;}
+}
+
+
+.row-red .row {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.sec-about p {font-size: .90em;}
+.row-grey {
+  background: #111;
+  color: #ddd;
+}
+.sec-about .row-grey .row {padding: 3em 0;}
+.sec-about article {padding: 0 1em;}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+
+
+.titre{
+text-align: center;
+
+}
+
+
+
+
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top:60px;
+  
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: right;
+
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+p{
+  margin-left: 30px;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+     <!--<div class="titre">
+		<h1>Heinrich Heine Akademie </h1>
+		<h3>Unser Service </h3>
+	</div>-->
+	
+	<div class="sign">
+      <span class="fast-flicker">Uns</span>er <span class="flicker">Ser</span>vice
+    </div><br><br><br><br><br><br><br><br>
+	
+	
+	
+
+<div class="row">
+  <div class="column">
+    <img src="bildern/img24.jfif" alt="Snow" style="width:100%" class="zoom">
+  </div>
+  <div class="column">
+    <img src="bildern/img25.jfif" alt="Forest" style="width:100%" class="zoom">
+  </div>
+  <div class="column">
+    <img src="bildern/img26.jfif" alt="Mountains" style="width:100%" class="zoom">
+  </div>
+</div>
+    </div>
+  </section>
+  <section class="sec-about">
+    
+    <div class="row-grey">
+      <div class="row">
+        <article class="col-2">
+          <h1>Unser Service und was uns von anderen Sprachschulen unterscheidet.</h1>
+          <p>An aller erster Stelle, ist unsere oberste Priorität und unser wichtigstes Ziel, dass jeder unserer Schüler seine Prüfung bestmöglich besteht. </p>
+          <p>Dabei legen wir sehr viel Wert darauf, dass jeder Schüler die deutsche Sprache nicht nur versteht, 
+		  sondern diese auch in Gesprächen richtig anwenden kann. Dazu gehört auch die richtige Grammatik und Aussprache.</p>
+		  <p>Dieses Ziel erfordert natürlich auch Zeit. </p>
+		  <p>Wir die Heinrich Heine Akademie, nehmen uns diese Zeit für jeden unserer Schüler.  </p>
+		  <p>Der Unterschied zwischen uns und anderen Sprachschulen ist, dass wir keine konkrete Zeitangabe für die jeweiligen Niveaus machen. 
+		  Vom Zeitablauf ist jedes Niveau auf 3 Monate ausgelegt, jedoch liegt hier bei uns der kleine Unterschied, 
+		  dass wir unser Niveau erst dann abschließen, wenn jeder unserer Schüler das jeweilige Niveau auch richtig verstanden hat. 
+		  Das kann natürlich dann auch bedeuten, dass wir anstatt der vorgegebenen 3 Monate, 
+		  auch mal 4 Monate brauchen um das jeweilige Niveau erfolgreich zu beenden.</p>
+		  <p>Uns ist auch sehr wichtig, dass die Online Klassen nicht mehr als 10 Schüler pro Kurs haben.  </p>
+		  <p>Damit möchten wir jedem Schüler auch die Chance geben sich in klein Gruppen besser konzentrieren zu können und somit hat 
+		  auch Zeitgleich jeder die Möglichkeit,
+		  mitten im Unterricht Fragen stellen zu können.</p>
+		  <p>Unsere Intensiv Online Deutschkurse A1-B2 finden täglich von Montag-Freitag à 2 Stunden statt. Somit lernen unsere Schüler 40 Stunden 
+		  im Monat die Deutsche Sprache kennen. Da wir sehr bemüht sind, dass auch wirklich jeder Schüler mit Bestleistung seine Prüfungen besteht, 
+		  bekommt man auch bei uns nach jedem Unterricht Hausaufgaben auf. D
+		  iese können zu Hause alleine abgearbeitet werden oder aber in klein Gruppen per Videochat auf einer unserer Plattformen die wir unseren 
+		  Schülern kostenlos zu Verfügung stellen. </p>
+		  
+        </article>
+        <article class="col-2"><br><br><br><br>
+          
+          <p> Alle unsere Deutschkurse werden von qualifiziert ausgebildeten deutsch-marokkanisch gebürtigen Lehrern abgehalten.  
+		   Wir arbeiten nach dem gemeinsamen europäischen Referenzrahmen für Sprachen und dem Rahmencurriculum für Integrationskurse. 
+		   Sowie dem Lehrplan des Goethe Instituts. Des weiteren benutzen wir das neuste Lehrmaterial vom Hueber Verlag. </p>
+          <p>Jeder Schüler bekommt von uns das Kurs- und Arbeitsbuch in pdf zu Verfügung gestellt. 
+		  Mit diesen Büchern und einem hoch qualitativen Mainboard, sowie Audio und Video Aufnahmen, lernen wir gemeinsam, 
+		  Stück für Stück über die Plattform „Zoom“ die Deutsche Sprache kennen. </p>
+		  <p>Zum Abschluss der Prüfungen bieten wir jedem unserer Schüler, der gerne in Deutschland eine Ausbildung machen möchte, 
+		  oder nach dem neuen Fachkräfteeinwanderungsgesetz arbeiten möchte, einen separaten Service an.</p>
+		  <p>Dieser beinhaltet, die gemeinsame Suche nach einer passenden Ausbildung/Arbeitsstelle in Deutschland.  </p>
+		  <p>Wir schreiben mit euch gemeinsam eure Bewerbungen und Lebensläufe und bereiten euch auf die Vorstellungsgespräche mit eurem zukünftigen
+		  Arbeitgeber vor.</p>
+		  <p>Selbstverständlich unterstützen wir euch auch bei dem Visa Antrag im deutschen Konsulat. </p>
+		  <p>Zu guter Letzt begleiten wir euch noch eine Zeitlang in Deutschland, und unterstützen euch bei all euren Fragen.</p>
+		  <p>Gerne kann jeder, der die deutsche Sprache lernen möchte einmal in einen unserer Online Kurse reinschnuppern. </p>
+		  <p>Hierzu meldet ihr euch ganz unverbindlich und kostenlos zu einer Probe online Stunde unter folgender Telefonnummer +212 641 130 722 </p>
+		  <p>Wir freuen uns auf euch.</p>
+		  <p>Euer Heinrich Heine Akademie TEAM</p>
+        </article><button class="button button1"><a href="index.html">Zurück</a></button>
+      </div>
+    </div>
+  </section>
+  
+  
+  </body>
+  </html>

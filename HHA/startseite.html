@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Heinrich Heine Akademie( Startseite )</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+body{
+background-color:#f1f1f1;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: right;
+
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+p,span,li{
+	margin-left: 30px;
+	letter-spacing: 2px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">"Online-Sprachenlernen ist der Weg, mit dem Du die Welt spielend kennen lernen kannst"</h2>
+
+<div class="w3-content w3-section" style="max-width:600px" >
+  <img class="mySlides" src="bildern/img19.jfif" style="width:100%">
+  <img class="mySlides" src="bildern/img20.jfif" style="width:100%">
+  <img class="mySlides" src="bildern/img21.jfif" style="width:100%">
+  <img class="mySlides" src="bildern/img22.jfif" style="width:100%"><br>
+  
+  <h3><i>Deutsch lernen per Onlinekurs</i></h3>                 
+
+  <p>Trainieren Sie den sicheren Gebrauch der deutschen Sprache und schulen Sie Ihre rhetorischen Fähigkeiten. Die Onlinekurse Deutsch im Beruf führen Sie zu einem sprachgewandten Auftreten. So können Sie per Deutsch Intensivkurs Ihr Deutsch verbessern - dies hilft Ihnen sowohl im beruflichen als auch im privaten Umfeld.</p>    
+
+  <h3><i>Mit Heinrich Heine Akademie, Deutsch online lernen: Ihre Vorteile</i></h3> 
+  		 <ul>            
+	  		 <li>
+				✓ Live-Sprachtraining via Internet Zoom Call                             
+			</li>
+
+			<li>
+				✓ Inklusive Einstufungstest                                                           
+			</li>
+
+			<li>
+				✓ Gruppenunterricht nur 10 Teilnehmer pro Kurs                     
+			</li>
+
+			<li>
+			    ✓ Erfahrene, qualifizierte Deutsch Muttersprachler                  
+			</li>
+			<li>
+				✓ Alle Niveaus (A1-B2)
+			</li>
+		 
+
+		 </ul> 
+			 <span>    
+
+				Online Deutschkurse mit qualifizierten Deutsch Muttersprachlern. Deutsch online lernen A1, A2, B1, B2. Jetzt effektiv und überall auf der Welt Deutsch Online lernen.  Sie können jetzt bequem von zu Hause aus Deutsch lernen. Vergessen Sie lange Fahrten zu den Unterrichtsräumen. Ganz gleich, wo Sie wohnen, unsere Lehrer sind immer für Sie zur Stelle und schnell über das Internet erreichbar.– Für internetaffine Sprachinteressierte bieten wir Deutschkurse online an. Sie können bequem von zu Hause lernen. Notwendig sind lediglich ein Computer und ein Internetanschluss. Wir bieten online Gruppenkurse Deutsch mit bis zu 10 Teilnehmern pro Kurs an. Fünf Mal wöchentlich findet unser Intensivkurs a 120 Minuten statt. Profitieren Sie von unserem langjährigen Wissen auf dem Gebiet des Sprachunterrichts jetzt auch online.
+
+			 </span><button class="button button1"><a href="index.html">Zurück</a></button>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

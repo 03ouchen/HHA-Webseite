@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("bildern/img18.jfif");
+
+  /* Full height */
+  height: 60%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:30px;
+}
+
+.mrg{
+  margin:30px;
+  background-color:#D3D3D3; 
+}
+
+
+
+
+
+
+.row {
+  margin: auto;
+  width: 100%;
+  max-width: 60em;/*960px*/
+  &:first-child {padding-top: 3em;}
+  &:last-child {padding-bottom: 3em;}
+  
+}
+.col-3,
+.col-2 {
+  display: inline-block;
+  vertical-align: top;
+  
+}
+.col-3 {width: 280px;}
+.col-2 {width: 49%;}
+@media screen and (max-width: 768px) {
+  .col-3,
+  .col-2 {width: 49%;}
+}
+
+
+.row-red .row {
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+.sec-about p {font-size: .90em;}
+.row-grey {
+  background: #111;
+  color: #ddd;
+}
+.sec-about .row-grey .row {padding: 3em 0;}
+.sec-about article {padding: 0 1em;}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.zoom{
+ height:50vh;
+}
+h1{
+color : blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {margin:0;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background: red;
+  color: red;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  float: right;
+
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+li{
+  margin-left: 30px;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+
+		<div class="bg"><marquee><h1><strong>Heinrich Heine Akademie :</strong></h1></marquee></div>
+		<div class="mrg">
+		
+		<hr>
+		
+		
+		 <h1><center><i>Social Media</i></center></h1>
+		 
+		</div>
+		<hr><hr>
+		
+		
+		
+		
+		<!-- image slide -->
+		
+		<div class="icon-bar">
+		  <a href="https://www.facebook.com/heinrichheineakademie" class="facebook"><i class="fa fa-facebook"></i></a> 
+		  <a href="https://www.instagram.com/heinrich_heine_akademie/" class="instagram"><i class="fa fa-instagram"></i></a> 
+		  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+		  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+		  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+		</div>
+
+		<div class="content">
+		  <h3><strong>Heinrich Heine Akademie  :</strong></h3>
+      <ul>
+		  <li>Willkommen bei Heinrich Heine Akademie</li>
+		  <li>deiner neuen Schule</li>
+		  <li>Mit uns kannst du Deutsch online lernen mit echten Deutschlehrern</li>
+		  <li>live Online Unterrich</li>
+		  <li>von überall und jederzeit.</li></ul>
+		</div>
+		
+		
+		
+		<hr>
+		<hr><button class="button button1"><a href="index.html">Zurück</a></button>
+		
+		
+		
+		
+
+</body>
+</html>
